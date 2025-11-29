@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code - Verificador de Força de Senha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Verificador de Senhas</h1>
+        <p class="subtitle">Escaneie o QR Code com seu smartphone para acessar a ferramenta de verificação de força de senha</p>
+
+        <div class="qr-wrapper">
+            <div id="qrcode"></div>
+        </div>
+
+        <div class="url-section">
+            <label class="url-label">URL de Acesso</label>
+            <div class="url-box" id="urlBox">https://8080-itec60tupoejz07ypezw2-2bea3699.manusvm.computer</div>
+            <div class="button-group">
+                <button class="copy-btn" onclick="copyToClipboard()">📋 Copiar URL</button>
+                <button class="open-btn" onclick="openUrl()">🔗 Abrir no Navegador</button>
+            </div>
+            <div class="success-message" id="successMessage">✓ URL copiada para a área de transferência!</div>
+        </div>
+
+        <div class="info-box">
+            <strong>💡 Como usar:</strong>
+            1. Escaneie o QR Code com a câmera do seu smartphone<br>
+            2. Ou clique em "Abrir no Navegador" para acessar diretamente<br>
+            3. Digite sua senha para verificar a força
+        </div>
+
+        <div class="download-section">
+            <button class="download-btn" onclick="downloadQRCode()">⬇️ Baixar QR Code como Imagem</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
